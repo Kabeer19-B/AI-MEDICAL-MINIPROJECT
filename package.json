@@ -1,0 +1,25 @@
+{
+  "name": "mediflow-hospital-workflow-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "node apps/mediflow/server/index.js",
+    "dev:web": "vite --config apps/mediflow/vite.config.ts",
+    "build": "vite build --config apps/mediflow/vite.config.ts"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "lucide-react": "^0.511.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "typescript": "^5.7.2",
+    "vite": "^8.3.5"
+  }
+}
